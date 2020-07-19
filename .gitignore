@@ -1,0 +1,11 @@
+# IDE files and other common files
+*.iml
+.idea/
+node_modules/
+
+# local config files with private data
+/config/local*.json
+
+# files created through sync or export
+/data/export
+/data/vsync

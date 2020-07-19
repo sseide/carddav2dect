@@ -1,0 +1,37 @@
+{
+  "extends": "google",
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "rules": {
+    "max-len": [ "warn", {
+          "code": 120,
+          "ignoreComments": true,
+          "ignoreTrailingComments": true,
+          "ignoreUrls": true
+    }],
+    "require-jsdoc": ["error", {
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": false,
+        "ClassDeclaration": true,
+        "ArrowFunctionExpression": true,
+        "FunctionExpression": true
+      }
+    }],
+    "comma-dangle": "off",
+    "brace-style": ["error", "stroustrup"],
+    "no-multi-spaces": "off",
+    "no-throw-literal": "warn",
+    "space-infix-ops": "error",
+    "new-cap": "off"
+  },
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "require": false,
+    "process": false,
+    "__dirname": false
+  }
+}

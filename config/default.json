@@ -1,0 +1,30 @@
+{
+  "chrome": {
+    "executable": "/usr/bin/chromium",
+    "debug": false
+  },
+  "syncContacts": [],
+  "syncDistributionList": "",
+  "cardDav": {
+    "url":"https://caldav.server/",
+    "username": "",
+    "password": "",
+    "addressbook": "addressbook"
+  },
+  "local": {
+    "vsyncConfig": "data/vsync/config",
+    "vsyncStatusDir": "data/vsync/status",
+    "vcfDir": "data/addressbook"
+  },
+  "destination": {
+    "vCardFile": "data/export/gigaset.vcf",
+    "gigaset": {
+      "host": "http://www.gigaset-config.com",
+      "pin": "0000",
+      "loginPage": "/login.html",
+      "phonebookPage": "/settings_phonebook_transfer.html",
+      "deleteBeforeUpload": false,
+      "handsets": ["ALL"]
+    }
+  }
+}

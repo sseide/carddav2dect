@@ -1,0 +1,19 @@
+{
+  "author": {
+    "name": "S. Seide"
+  },
+  "name": "carddav2dect",
+  "description": "Sync contact data from a CardDAV server to a Gigaset DECT PRO station",
+  "license": "MIT",
+  "scripts": {
+    "vdirsync_config": "node lib/vdirsyncConfig",
+    "filter": "node lib/filterVcards.js",
+    "upload": "node lib/upload.js"
+  },
+  "dependencies": {
+    "config": "~3.3.1",
+    "deeper": "~2.1.0",
+    "puppeteer-core": "^5.1.0",
+    "vcf": "~2.0.6"
+  }
+}
