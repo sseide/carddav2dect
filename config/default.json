@@ -14,11 +14,12 @@
   "local": {
     "vsyncConfig": "data/vsync/config",
     "vsyncStatusDir": "data/vsync/status",
-    "vcfDir": "data/addressbook"
+    "vcfBaseDir": "data/addressbook"
   },
   "destination": {
     "vCardFile": "data/export/gigaset.vcf",
     "gigaset": {
+      "enabled": true,
       "host": "http://www.gigaset-config.com",
       "pin": "0000",
       "loginPage": "/login.html",

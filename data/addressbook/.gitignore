@@ -1,0 +1,3 @@
+# Created to store empty dir in git, ignore all other files/directories (synced vcards)
+[a-zAZ]*
+[0-9]*

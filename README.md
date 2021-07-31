@@ -56,8 +56,7 @@ More information on different config parameters can be found in file
 
 ## Compatibility
 
-Tested with the following Gigaset DECT stations. Consumer stations (Gigaset GO)
-should work too.
+Tested with the following Gigaset PRO DECT and GO (Consumer) stations.
 
 |  Device     | Firmware | Works | Comment |
 |-------------|:--------:|:-----:|---------|
@@ -72,4 +71,3 @@ If there are some other devices (success / failure) please add via pull request 
 1. vdirsyncer - https://github.com/pimutils/vdirsyncer
 2. puppeteer - https://github.com/puppeteer/puppeteer
 3. node "config" - https://github.com/lorenwest/node-config/wiki
- 

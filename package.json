@@ -1,19 +1,40 @@
 {
   "author": {
-    "name": "S. Seide"
+    "name": "S. Seide",
+    "url": "https://github.com/sseide/"
   },
   "name": "carddav2dect",
   "description": "Sync contact data from a CardDAV server to a Gigaset DECT PRO station",
+  "version": "0.2.0",
   "license": "MIT",
   "scripts": {
     "vdirsync_config": "node lib/vdirsyncConfig",
     "filter": "node lib/filterVcards.js",
     "upload": "node lib/upload.js"
   },
+  "keywords": [
+    "carddav",
+    "dect",
+    "sync",
+    "synchronize",
+    "gigaset",
+    "addressbook",
+    "contacts"
+  ],
   "dependencies": {
     "config": "~3.3.1",
+    "debug": "^4.1.1",
     "deeper": "~2.1.0",
     "puppeteer-core": "^5.1.0",
-    "vcf": "~2.0.6"
-  }
+    "rimraf": "3.0.2",
+    "vcf": "~2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sseide/carddav2dect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sseide/carddav2dect/issues"
+  },
+  "homepage": "https://github.com/sseide/carddav2dect.git"
 }

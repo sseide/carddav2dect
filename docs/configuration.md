@@ -34,7 +34,7 @@ for synchronisation with CardDAV server and before uploading to Gigaset station.
 |-------|------|---------|-------------|
 | vsyncConfig | string | | |
 | vsyncStatusDir | string | | |
-| vcfDir | string | | |
+| vcfBaseDir | string | | |
 
 #### Parameter of "destination" object
 
