@@ -1,0 +1,25 @@
+{
+  "chrome": {
+    "debug": "DEBUG"
+  },
+  "syncContacts": {
+        "__name": "SYNC_CONTACTS_ARRAY",
+        "__format": "json"
+      },
+  "syncDistributionList": "SYNC_DISTRIBUTION_LIST",
+  "cardDav": {
+    "url":"SRC_CARDDAV_URL",
+    "username": "SRC_CARDDAV_USERNAME",
+    "password": "SRC_CARDDAV_PASSWORD",
+    "addressbook": "SRC_CARDDAV_ADDRESSBOOK"
+  },
+  "destination": {
+    "gigaset": {
+      "enabled": "DEST_GIGASET_ENABLED",
+      "host": "DEST_GIGASET_HOST",
+      "pin": "DEST_GIGAET_PIN",
+      "deleteBeforeUpload": "DEST_GIGASET_DELETE_BEFORE_UPLOAD",
+      "handsets": "DEST_GIGASET_HANDSETS_LIST"
+    }
+  }
+}
