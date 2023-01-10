@@ -1,7 +1,7 @@
 # Sync address books from CardDAV server to Gigaset DECT stations
 
 This project contains some scripts to allow synchronisation of an addressbook from
-a CardDAV server to a Gigaset DECT station. This scripts are not using or configuring a 
+a CardDAV server to a Gigaset DECT station. These scripts are not using or configuring a 
 external/system-wide address book at the Gigaset system but upload the address data 
 directly to all/selected handsets as local address books.
 
@@ -16,10 +16,12 @@ As puppeteer has a very strict dependency on the version of chromium/chrome used
 might be adapted inside package.json to either use the correct version or let
 puppeteer install the version it needs by itself.
 For puppeteer compatibility matrix check  
-### Short install commands needed
+
+### Short installation commands needed
 Debian / Ubuntu:
 ```bash
 apt-get install vdirsyncer chromium
+npm install
 ```
 
 ## Configuration
@@ -48,7 +50,7 @@ Minimum data to set inside `config/local.json`:
 ```
 Either set the name of a vCard distribution list `syncDistributionList` or an array
 with all contact names (full name attribute FN) 'syncContacts' to sync.
-Otherwise (none of booth is set) all contacts are synced into Gigaset address book.
+Otherwise, (none of booth is set) all contacts are synced into Gigaset address book.
 If booth params are set the distribution list `syncDistributionList` takes precedence.
 
 More information on different config parameters can be found in file 
@@ -58,11 +60,11 @@ More information on different config parameters can be found in file
 
 Tested with the following Gigaset PRO DECT and GO (Consumer) stations.
 
-|  Device     | Firmware | Works | Comment |
-|-------------|:--------:|:-----:|---------|
-| Gigaset N510 IP PRO | 42.250   | &#10004;  |  |
-| Gigaset GO 100 <br> (GO S850H) | 42.248 | &#10004; | Special version bundled with S850 Handset, probably the same as for other handset models|
-| ??? |  | &#10006; | |
+| Device                         | Firmware |  Works   | Comment                                                                                  |
+|--------------------------------|:--------:|:--------:|------------------------------------------------------------------------------------------|
+| Gigaset N510 IP PRO            |  42.250  | &#10004; |                                                                                          |
+| Gigaset GO 100 <br> (GO S850H) |  42.248  | &#10004; | Special version bundled with S850 Handset, probably the same as for other handset models |
+| ???                            |          | &#10006; |                                                                                          |
 
 If there are some other devices (success / failure) please add via pull request or create issue
 
