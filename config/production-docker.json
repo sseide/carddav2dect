@@ -1,0 +1,6 @@
+{
+  "chrome": {
+    "headless": true,
+    "disableSandbox": true
+  }
+}

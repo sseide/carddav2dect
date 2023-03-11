@@ -1,0 +1,13 @@
+version: "3"
+services:
+  carddav2dect:
+    image: carddav2dect
+    container_name: carddav2dect
+    volumes:
+      - ./data:/app/data
+      - ./config/local.json:/app/config/local.json
+    logging:
+      options:
+        max-size: "500k"
+        max-file: "10"
+    restart: no

@@ -1,5 +1,9 @@
 *.iml
-.gitignore
 .github/
 .idea/
-data/*
+.scannerwork/
+data/
+node_modules/
+.dockerignore
+.eslintrc.json
+.gitignore
