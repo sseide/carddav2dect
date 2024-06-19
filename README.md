@@ -56,9 +56,32 @@ If booth params are set the distribution list `syncDistributionList` takes prece
 More information on different config parameters can be found in file 
 [`docs/configuration.md`](docs/configuration.md)
 
+## Run
+
+To do a full snyc cycle (fetch latest address card entries and upload to a handset)
+just run `sync.sh` script. its do all steps neccesary.
+
 ## Compatibility
 
 Tested with the following Gigaset PRO DECT and GO (Consumer) stations.
+
+Important: these sytems allow one one login at a time - it is not possible to
+log into the Gigaset device in parallel multiple times. And it is important 
+to log out at the end and not just close the browser!
+
+This sync script cannot run with another user logged into the station.
+in this case an error message will be shown:
+```
+LOGIN DIALOG MSG: Kein Zugriff möglich, da bereits eine Konfigurationssitzung
+ auf einem anderen Client aktiv ist.
+```
+
+In this case do one of the following befor running sync again:
+1. log out your other browser session or 
+2. wait some minutes until Gigaset station do a forced logout of the user or
+3. reboot station.
+
+Tested with:
 
 | Device                         | Firmware |  Works   | Comment                                                                                  |
 |--------------------------------|:--------:|:--------:|------------------------------------------------------------------------------------------|
