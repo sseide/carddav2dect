@@ -4,7 +4,7 @@ LABEL io.k8s.description="App to sync contacts from CardDAV server to DECT devic
 LABEL io.openshift.tags=carddav,dect,gigaset,contacts
 LABEL io.openshift.wants=tokenizer
 
-ARG NODEJS_VERSION=16
+ARG NODEJS_VERSION=20
 ARG SERVICE_USER="app"
 ENV SERVICE_USER=$SERVICE_USER
 
@@ -19,8 +19,8 @@ RUN export DEBIAN_FRONTEND=noninteractive \
   && apt-get update -q \
   && apt-get install -q -y apt-utils \
   && apt-get upgrade -q -y \
-  && apt-get install -q -y jq curl ca-certificates dumb-init tzdata sudo procps \
-  && adduser --system --gid 0 --uid 200 --home /app "$SERVICE_USER" \
+  && apt-get install -q -y ca-certificates curl dumb-init jq procps sudo tzdata \
+  && adduser --system --gid 0 --uid 20000 --home /app "$SERVICE_USER" \
   && echo "\n---- Install NodeJS from nodesource.com ----------------------" \
   && curl -sL "https://deb.nodesource.com/setup_${NODEJS_VERSION}.x" | APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1 bash - \
   && apt-get install -y nodejs \
@@ -45,7 +45,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
   && rm -rf /tmp/*
 
 # id of newly created service user, number (not name) needed for OpenShift compatibility
-USER 200
+USER 20000
 
 ENV NODE_ENV=production
 ENV NODE_APP_INSTANCE=docker
