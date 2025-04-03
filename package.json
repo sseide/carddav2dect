@@ -22,11 +22,14 @@
     "addressbook",
     "contacts"
   ],
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
-    "config": "~3.3.11",
-    "debug": "~4.3.5",
+    "config": "~3.3.12",
+    "debug": "~4.4.0",
     "deeper": "~2.1.0",
-    "puppeteer-core": "~22.11.2",
+    "puppeteer-core": "~24.6.0",
     "rimraf": "~5.0.7",
     "vcf": "~2.1.2"
   },
